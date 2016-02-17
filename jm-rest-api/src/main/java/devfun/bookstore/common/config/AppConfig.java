@@ -23,6 +23,7 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 @Configuration
 public class AppConfig implements TransactionManagementConfigurer{
 //마스트 커밋 Branch1 입니다.
+    
     @Bean
     public DataSource dataSource() {
         return new EmbeddedDatabaseBuilder().setName("testdb").setType(EmbeddedDatabaseType.HSQL)
@@ -35,7 +36,7 @@ public class AppConfig implements TransactionManagementConfigurer{
         sessionFactory.setDataSource(dataSource());
         return sessionFactory.getObject();
     }
-
+//마스터도 수정했지롱
     
     @Bean
     public PlatformTransactionManager transactionManger(){
