@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 @ComponentScan(basePackages = {"devfun.bookstore.common.service"}, useDefaultFilters = false, includeFilters = {@Filter(Service.class)})
 @Configuration
 public class AppConfig implements TransactionManagementConfigurer{
-//마스트 커밋
+//마스트 커밋 Branch1 입니다.
     @Bean
     public DataSource dataSource() {
         return new EmbeddedDatabaseBuilder().setName("testdb").setType(EmbeddedDatabaseType.HSQL)
