@@ -16,7 +16,7 @@ public class Book {
     
     public Book() {
     }
-    
+    //마스터는 변경되었습니다.
     public Book(Long id, String title, String creator, String type, Date date) {
         super();
         this.id = id;
