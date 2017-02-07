@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 @ComponentScan(basePackages = {"devfun.bookstore.common.service"}, useDefaultFilters = false, includeFilters = {@Filter(Service.class)})
 @Configuration
 public class AppConfig implements TransactionManagementConfigurer{
-//마스트 커밋 Branch1 입니다.하하하하하ggggggggg----------------
+//마스트 커밋 Branch1 입니다.하하하하하ggggggggg------------------
     
     @Bean
     public DataSource dataSource() {
